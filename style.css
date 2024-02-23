@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* DEFINIÇÕES GERAIS */
+
+.container {
+    width: 100vw;
+    height: 100%;
+    padding: 32px 20px;
+}
+
+h1 {
+    font-weight: bold;
+    color: #4d39e3;
+    font-size: 2rem;
+}
+
+/* SLIDER */
+
+.containerSlide {
+    position: relative;
+}
+
+.containerSlide .slide-container .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.containerSlide .slide-container .slide .content {
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .4s backwards;
+}
+
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+.containerSlide .slide-container .slide .content h3 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.containerSlide .slide-container .slide .content p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    width: 40%;
+    height: 10%;
+}
+
+.containerSlide .slide-container .slide .content .slide-btn {
+    margin-bottom: 10px;
+    display: inline-block;
+    background: #3c28d8;
+    color: #fff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border: 2px solid #2511b7;
+    text-decoration: none;
+    transition: ease .3s;
+}
+
+.containerSlide .slide-container .slide .content .slide-btn:hover {
+    background-color: #4d39e3;
+}
+
+.containerSlide .slide-container {
+    display: none;
+}
+
+.containerSlide .slide-container.active {
+    display: block;
+}
+
+.containerSlide .slide-container:nth-child(1) .slide {
+    background: url('img/IMG-20240208-WA0002.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerSlide .slide-container:nth-child(2) .slide {
+    background: url('img/IMG-20240208-WA0014.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerSlide .slide-container:nth-child(3) .slide {
+    background: url('img/IMG-20240208-WA0016.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerSlide #prev,
+.containerSlide #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #4d39e3;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.containerSlide #prev:hover,
+.containerSlide #next:hover {
+    background: #2511b7;
+}
+
+.containerSlide #prev {
+    left: 20px;
+}
+
+.containerSlide #next {
+    right: 20px;
+}
+
+@media (max-width: 700px) {
+    .containerSlide #prev {
+        top: 60%;
+        left: 0;
+    }
+    .containerSlide #next {
+        top: 60%;
+        right: 0;
+    }
+    .containerSlide .slide-container .slide .content p {
+        font-size: 16px;
+        color: #fff;
+        width: 70%;
+        height: 10%;
+    }
+}
+
+/* PROPÓSITO */
+
+.proposito {
+    width: 100vw;
+    height: 100%;
+}
+
+.proposito .container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proposito .container h1 {
+    margin-bottom: 32px;
+}
+
+.proposito .container .content {
+    display: grid;
+    grid-template-columns: 45% 5% 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.proposito .container .content .text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+}
+
+.proposito .container .content .text p {
+    width: 100%;
+    max-width: 500px;
+    line-height: 26px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.proposito .container .content .purpleBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.proposito .container .content .purpleBar #purpleBar{
+    height: 100%;
+    width: 2px;
+    border-radius: 2px;
+    background-color: #4d39e3;
+}
+
+.proposito .container .content .img {
+    width: 100%;
+    position: relative;
+}
+
+.proposito .container .content .img img {
+    width: 100%;
+    max-width: 430px;
+    border-radius: 0 12px 0 12px;
+}
+
+.proposito .container .content .img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4d39e3;
+    border-radius: 0 12px 0 12px;
+    top: 10px;
+    left: 16px;
+    z-index: -1;
+}
