@@ -240,3 +240,27 @@ h1 {
     left: 16px;
     z-index: -1;
 }
+
+@media (max-width: 620px) {
+    .proposito .container .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .proposito .container .content .text {
+        text-align: start;
+    }
+    .proposito .container .content .purpleBar {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .proposito .container .content .purpleBar #purpleBar{
+        height: 2px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: #4d39e3;
+    }
+}
