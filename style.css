@@ -199,9 +199,9 @@ h1 {
 .proposito .container .content .text p {
     width: 100%;
     max-width: 500px;
-    line-height: 26px;
-    font-size: 1.3rem;
-    font-weight: 300;
+    line-height: 30px;
+    font-size: 1.8rem;
+    font-weight: 200;
 }
 
 .proposito .container .content .purpleBar {
@@ -262,5 +262,151 @@ h1 {
         width: 100%;
         border-radius: 2px;
         background-color: #4d39e3;
+    }
+}
+
+/* NOTÍCIAS */
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.noticias .container h1 {
+    margin-bottom: 60px;
+}
+
+.noticias .container .cards {
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.noticias .container .cards .card {
+    width: 240px;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 3px #00000024;
+}
+
+.noticias .container .cards .card .img {
+    width: 240px;
+    height: 200px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 8px 8px 0 0;
+}
+
+.noticias .container .cards .card .img img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+.noticias .container .cards .card .text h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3c28d8;
+    margin-top: 28px;
+}
+
+.noticias .container .cards .card .text p {
+    font-size: 1.1rem;
+}
+
+/* CONTATO */
+
+.contato {
+    width: 100vw;
+    height: 100vh;
+}
+
+.contato .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.contato .container .box {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contato .container .box h1 {
+    margin-top: 60px;
+}
+
+.contato .container .box form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contato .container .box form fieldset {
+    width: 100%;
+    border: 4px solid #4d39e3;
+    border-radius: 16px;
+    padding: 20px 12px;
+}
+
+.contato .container .box fieldset legend img {
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #4d39e3;
+}
+
+.contato .container .box fieldset .inputBox {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.contato .container .box fieldset .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #4d39e3;
+    outline: none;
+    color: #474747;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.contato .container .box fieldset .inputLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: linear .3s;
+}
+
+.contato .container .box fieldset .inputUser:focus ~ .inputLabel,
+.contato .container .box fieldset .inputUser:valid ~ .inputLabel {
+    top: -20px;
+    font-size: 12px;
+    color: #3c28d8;
+}
+
+.contato .container .box fieldset #submit {
+    background: linear-gradient(to right, #2511b7, #4d39e3);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: ease-in-out .3s;
+    &:hover {
+        transform: scale(1.03);
     }
 }
