@@ -7,8 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #f8f8f8;
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #6b1ed0;
 }
 
 /* DEFINIÇÕES GERAIS */
@@ -23,6 +29,21 @@ h1 {
     font-weight: bold;
     color: #4d39e3;
     font-size: 2rem;
+    text-shadow: 0 3px 3px #00000024;
+}
+
+a.link {
+    padding: 4px 18px;
+    font-weight: 600;
+    background-color: #3c28d8;
+    color: #fff;
+    text-shadow: 0 3px 3px #00000024;
+    border-radius: 8px;
+}
+
+body {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
 }
 
 /* SLIDER */
@@ -271,11 +292,13 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #e5e5e5;
+    background-color: #422A61;
+    height: 100%;
 }
 
 .noticias .container h1 {
     margin-bottom: 60px;
+    color: #f5f5f5;
 }
 
 .noticias .container .cards {
@@ -287,7 +310,7 @@ h1 {
 }
 
 .noticias .container .cards .card {
-    width: 240px;
+    width: 280px;
     height: 380px;
     background-color: #fff;
     border-radius: 8px;
@@ -295,7 +318,7 @@ h1 {
 }
 
 .noticias .container .cards .card .img {
-    width: 240px;
+    width: 280px;
     height: 200px;
     background-color: rgb(184, 184, 184);
     border-radius: 8px 8px 0 0;
@@ -303,7 +326,6 @@ h1 {
 
 .noticias .container .cards .card .img img {
     border-radius: 8px 8px 0 0;
-    width: 100%;
 }
 
 .noticias .container .cards .card .text h3 {
@@ -315,19 +337,73 @@ h1 {
 
 .noticias .container .cards .card .text p {
     font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+
+/* PROJETOS */
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.projetos .container h1 {
+    margin-bottom: 60px;
+}
+
+.projetos .container .cards {
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.projetos .container .cards .card {
+    width: 280px;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 3px #00000024;
+}
+
+.projetos .container .cards .card .img {
+    width: 280px;
+    height: 200px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 8px 8px 0 0;
+}
+
+.projetos .container .cards .card .img img {
+    border-radius: 8px 8px 0 0;
+}
+
+.projetos .container .cards .card .text h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3c28d8;
+    margin-top: 28px;
+}
+
+.projetos .container .cards .card .text p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
 }
 
 /* CONTATO */
 
 .contato {
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    background-color: #422A61;
 }
 
 .contato .container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
 }
 
@@ -343,60 +419,53 @@ h1 {
 
 .contato .container .box h1 {
     margin-top: 60px;
+    color: #f5f5f5;
 }
 
 .contato .container .box form {
     width: 100%;
-    margin: 20px 0;
+    margin: 40px 0;
+    background-color: #883FE4;
+    border-radius: 4px;
+    padding: 40px 12px;
+    box-shadow: 40px 30px 15px #0000006f;
 }
 
-.contato .container .box form fieldset {
-    width: 100%;
-    border: 4px solid #4d39e3;
-    border-radius: 16px;
-    padding: 20px 12px;
-}
-
-.contato .container .box fieldset legend img {
-    width: 60px;
-    border-radius: 50%;
-    border: 3px solid #4d39e3;
-}
-
-.contato .container .box fieldset .inputBox {
+.contato .container .box .inputBox {
     position: relative;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.contato .container .box fieldset .inputUser {
+.contato .container .box .inputUser {
     background: none;
     border: none;
-    border-bottom: 1px solid #4d39e3;
+    border-bottom: 1px solid #7F2CE8 ;
     outline: none;
-    color: #474747;
+    color: #e0e0e0;
     font-size: 15px;
     letter-spacing: 2px;
     width: 100%;
 }
 
-.contato .container .box fieldset .inputLabel {
+.contato .container .box .inputLabel {
     position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
     transition: linear .3s;
+    color: #fff;
 }
 
-.contato .container .box fieldset .inputUser:focus ~ .inputLabel,
-.contato .container .box fieldset .inputUser:valid ~ .inputLabel {
+.contato .container .box .inputUser:focus ~ .inputLabel,
+.contato .container .box .inputUser:valid ~ .inputLabel {
     top: -20px;
     font-size: 12px;
     color: #3c28d8;
 }
 
-.contato .container .box fieldset #submit {
-    background: linear-gradient(to right, #2511b7, #4d39e3);
+.contato .container .box #submit {
+    background: linear-gradient(to right, #6b1ed0, #7f36da);
     border: none;
     outline: none;
     width: 100%;
@@ -405,6 +474,7 @@ h1 {
     color: white;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
     transition: ease-in-out .3s;
     &:hover {
         transform: scale(1.03);

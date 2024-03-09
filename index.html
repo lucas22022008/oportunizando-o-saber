@@ -6,134 +6,216 @@
     <title>Instituto - Oportunizando o Saber</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <!-- seção do slider -->
-    <section class="containerSlide">
-        <div class="slide-container active">
-            <div class="slide">
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="img/logo.jpg" alt="logo da Instituição Oportunizando o Saber"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">INICIO</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">INSTITUCIONAL</li>
+                <li class="nav-item"><a href="#" class="nav-link">EQUIPE</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">NOTICIAS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">PROJETOS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">MAIS</a></li>
+            </ul>
+            <div style="display: flex; gap: 18px;align-items: center;">
+                <div class="hamburguer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button class="doar"><a href="#">DOAR</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- seção do slider -->
+        <section class="containerSlide">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Título</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint incidunt a eveniet reiciendis nulla perspiciatis eum cum alias totam.</p>
+                        <a href="#" class="slide-btn">Saiba Mais.</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Título</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint incidunt a eveniet reiciendis nulla perspiciatis eum cum alias totam.</p>
+                        <a href="#" class="slide-btn">Saiba Mais.</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Título</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint incidunt a eveniet reiciendis nulla perspiciatis eum cum alias totam.</p>
+                        <a href="#" class="slide-btn">Saiba Mais.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" onclick="prev()"> < </div>
+            <div id="next" onclick="next()"> > </div>
+        </section>
+
+        <!-- seção de NOSSO PROPÓSITO -->
+        <section class="proposito">
+            <div class="container">
+                <h1>NOSSO PROPÓSITO</h1>
                 <div class="content">
-                    <h3>Título</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint incidunt a eveniet reiciendis nulla perspiciatis eum cum alias totam.</p>
-                    <a href="#" class="slide-btn">Saiba Mais.</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="slide-container">
-            <div class="slide">
-                <div class="content">
-                    <h3>Título</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint incidunt a eveniet reiciendis nulla perspiciatis eum cum alias totam.</p>
-                    <a href="#" class="slide-btn">Saiba Mais.</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="slide-container">
-            <div class="slide">
-                <div class="content">
-                    <h3>Título</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint incidunt a eveniet reiciendis nulla perspiciatis eum cum alias totam.</p>
-                    <a href="#" class="slide-btn">Saiba Mais.</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="prev" onclick="prev()"> < </div>
-        <div id="next" onclick="next()"> > </div>
-    </section>
-
-    <!-- seção de NOSSO PROPÓSITO -->
-    <section class="proposito">
-        <div class="container">
-            <h1>NOSSO PROPÓSITO</h1>
-            <div class="content">
-                <div class="text">
-                    <p>Na Instituição Oportunizando o Saber, reconhecemos que cada indivíduo é único, independente de origem, etnia, cultura, orientação sexual ou qualquer outra característica.</p>
-                    <p>Por isso o nosso propósito é criar um ambiente inclusivo, onde todas as pessoas possam alcançar o seu pleno potencial, visando criar um mundo mais equitativo por meio de ações coletivas e políticas públicas</p>
-                </div>
-                <div class="purpleBar">
-                    <div id="purpleBar"></div>
-                </div>
-                <div class="img">
-                    <img src="img/IMG-20240208-WA0027.jpg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NOTÍCIAS -->
-    <section class="noticias">
-        <div class="container">
-            <h1>Notícias Recentes</h1>
-            <div class="cards">
-                <div class="card">
-                    <div class="img">
-                        <img src="img/camera.png" alt="">
-                    </div>
                     <div class="text">
-                        <h3>Título da Notícia</h3>
-                        <p>Descrição</p>
+                        <p>Na Instituição Oportunizando o Saber, reconhecemos que cada indivíduo é único, independente de origem, etnia, cultura, orientação sexual ou qualquer outra característica.</p>
+                        <p>Por isso o nosso propósito é criar um ambiente inclusivo, onde todas as pessoas possam alcançar o seu pleno potencial, visando criar um mundo mais equitativo por meio de ações coletivas e políticas públicas</p>
                     </div>
-                </div>
-                <div class="card">
+                    <div class="purpleBar">
+                        <div id="purpleBar"></div>
+                    </div>
                     <div class="img">
-                        <img src="img/camera.png" alt="">
-                    </div>
-                    <div class="text">
-                        <h3>Título da Notícia</h3>
-                        <p>Descrição</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="img/camera.png" alt="">
-                    </div>
-                    <div class="text">
-                        <h3>Título da Notícia</h3>
-                        <p>Descrição</p>
+                        <img src="img/IMG-20240208-WA0027.jpg">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CONTATO -->
-    <section class="contato">
-        <div class="container">
-            <div class="box">
-                <h1>CONTATO</h1>
-                <form action="">
-                    <fieldset>
-                        <legend><img src="img/logo.jpg" alt="logo"></legend>
-                        <div class="inputBox">
-                            <input type="text" name="nome" id="nome" class="inputUser" required>
-                            <label for="nome" class="inputLabel">Nome</label>
+        <!-- NOTÍCIAS -->
+        <section class="noticias">
+            <div class="container">
+                <h1>Notícias Recentes</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/camera.png" alt="">
                         </div>
-                        <br>
-                        <div class="inputBox">
-                            <input type="email" name="email" id="email" class="inputUser" required>
-                            <label for="email" class="inputLabel">Email</label>
+                        <div class="text">
+                            <h3>Título da Notícia</h3>
+                            <p>Descrição</p>
+                            <a href="#" class="link">Ler Notícia</a>
                         </div>
-                        <br>
-                        <br>
-                        <div class="inputBox">
-                            <input type="text" name="assunto" id="assunto" class="inputUser" required>
-                            <label for="assunto" class="inputLabel">Assunto</label>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/camera.png" alt="">
                         </div>
-                        <br>
-                        <div class="inputBox">
-                            <input type="text" name="mensagem" id="mensagem" class="inputUser" required>
-                            <label for="mensagem" class="inputLabel">Mensagem</label>
+                        <div class="text">
+                            <h3>Título da Notícia</h3>
+                            <p>Descrição</p>
+                            <a href="#" class="link">Ler Notícia</a>
                         </div>
-                        <br>
-                        <input type="submit" value="Enviar" name="submit" id="submit">
-                    </fieldset>
-                </form>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Título da Notícia</h3>
+                            <p>Descrição</p>
+                            <a href="#" class="link">Ler Notícia</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="projetos">
+            <div class="container">
+                <h1>Nososs Projetos</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Título do Projeto</h3>
+                            <p>Descrição</p>
+                            <a href="#" class="link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Título do Projeto</h3>
+                            <p>Descrição</p>
+                            <a href="#" class="link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Título do Projeto</h3>
+                            <p>Descrição</p>
+                            <a href="#" class="link">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contato">
+            <div class="container">
+                <div class="box">
+                    <h1>CONTATO</h1>
+                    <form action="">
+                            <div class="inputBox">
+                                <input type="text" name="nome" id="nome" class="inputUser" required>
+                                <label for="nome" class="inputLabel">Nome</label>
+                            </div>
+                            <br>
+                            <div class="inputBox">
+                                <input type="email" name="email" id="email" class="inputUser" required>
+                                <label for="email" class="inputLabel">Email</label>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="assunto" id="assunto" class="inputUser" required>
+                                <label for="assunto" class="inputLabel">Assunto</label>
+                            </div>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="mensagem" id="mensagem" class="inputUser" required>
+                                <label for="mensagem" class="inputLabel">Mensagem</label>
+                            </div>
+                            <br>
+                            <input type="submit" value="Enviar" name="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h1>Endereço</h1>
+            <p>Rua: Dom Jackson Damasceno s/n área Verde-Flores</p>
+            <p>Manaus/AM-CEP: 68058-833</p>
         </div>
-    </section>
+        <div>
+            <h1>Contato</h1>
+            <p>Email: <a href="#">institutoosaber1@gmail.com</a></p>
+            <p>Telefone: <a href="#">(92)98254-3678</a></p>
+        </div>
+        <div>
+            <h1>Redes Sociais</h1>
+            <p><img src="img/instagram-icon.png" alt="instagram"><a href="#">@instituto_osaber</a></p>
+            <p><img src="img/facebook.png" alt="facebook"><a href="#">Biblioteca de Incentivo á Leitura</a></p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
