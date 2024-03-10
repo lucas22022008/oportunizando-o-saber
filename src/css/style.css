@@ -121,7 +121,7 @@ body {
 }
 
 .containerSlide .slide-container:nth-child(1) .slide {
-    background: url('/img/IMG-20240208-WA0002.jpg');
+    background: url('../img/IMG-20240208-WA0002.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -130,7 +130,7 @@ body {
 }
 
 .containerSlide .slide-container:nth-child(2) .slide {
-    background: url('/img/IMG-20240208-WA0014.jpg');
+    background: url('../img/IMG-20240208-WA0014.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -139,7 +139,7 @@ body {
 }
 
 .containerSlide .slide-container:nth-child(3) .slide {
-    background: url('/img/IMG-20240208-WA0016.jpg');
+    background: url('../img/IMG-20240208-WA0016.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
