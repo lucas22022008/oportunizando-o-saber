@@ -114,7 +114,7 @@ body {
 }
 
 .containerSlide .slide-container:nth-child(1) .slide {
-    background: url('img/IMG-20240208-WA0002.jpg');
+    background: url('.../img/IMG-20240208-WA0002.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
